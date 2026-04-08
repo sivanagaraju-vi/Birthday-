@@ -7,7 +7,7 @@ function nextPage(){
  pages[current].classList.add("active");
 }
 
-let target=new Date("April 10, 2026 09:00:00").getTime();
+let target=new Date("April 08, 2026 09:00:00").getTime();
 
 setInterval(()=>{
  let now=new Date().getTime();
