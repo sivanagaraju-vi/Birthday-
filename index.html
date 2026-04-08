@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" src="assets/music.mp3"></audio>
+
+<div id="musicControl" onclick="toggleMusic()">
+  <span id="icon">▶</span>
+  <div class="bars"><div></div><div></div><div></div></div>
+</div>
+
+<section id="page1" class="active">
+<h1>Wait for your surprise ❤️</h1>
+<p id="countdown"></p>
+<button id="enterBtn" disabled>Locked 🔒</button>
+</section>
+
+<section id="page2">
+<canvas id="fireworks"></canvas>
+<h1>Happy Birthday ❤️</h1>
+<button onclick="nextPage()">Continue</button>
+</section>
+
+<section id="page3">
+<p id="text"></p>
+<button onclick="nextPage()">Next</button>
+</section>
+
+<section id="page4">
+<div class="gallery">
+<img src="assets/img1.jpg">
+<img src="assets/img2.jpg">
+</div>
+<button onclick="nextPage()">Next</button>
+</section>
+
+<section id="page5">
+<video controls src="assets/video1.mp4"></video>
+<video controls src="assets/video2.mp4"></video>
+<button onclick="nextPage()">Next</button>
+</section>
+
+<section id="page6">
+<h1 class="final">Forever Yours ❤️</h1>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
